@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformação Corporal 2026 | Método Neurocientífico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-black: #0A0A0A;
+            --dark-black: #050505;
+            --light-black: #1A1A1A;
+            --primary-red: #D90429;
+            --dark-red: #9D0208;
+            --light-red: #FF4D6D;
+            --gradient-dark: linear-gradient(145deg, #050505 0%, #0A0A0A 30%, #1A1A1A 100%);
+            --gradient-red: linear-gradient(135deg, #9D0208 0%, #D90429 50%, #FF4D6D 100%);
+            --gradient-button: linear-gradient(135deg, #D90429 0%, #FF4D6D 100%);
+            --text-white: #FFFFFF;
+            --text-light: #F8F9FA;
+            --text-gray: #ADB5BD;
+            --card-bg: rgba(20, 20, 20, 0.8);
+            --border-color: rgba(217, 4, 41, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--gradient-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Minimalista */
+        .header {
+            padding: 40px 0 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Tag de Urgência Elegante */
+        .urgency-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(217, 4, 41, 0.1), rgba(255, 77, 109, 0.1));
+            border: 1px solid rgba(217, 4, 41, 0.3);
+            border-radius: 50px;
+            padding: 8px 20px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            animation: pulse 2s infinite;
+        }
+
+        .urgency-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--light-red);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 20px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--text-white) 0%, var(--light-red) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        /* Countdown Elegante e Integrado */
+        .countdown-integrated {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(20, 20, 20, 0.6);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .countdown-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .countdown-time {
+            display: flex;
+            gap: 5px;
+        }
+
+        .time-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 50px;
+        }
+
+        .time-value {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-red);
+            line-height: 1;
+            position: relative;
+        }
+
+        .time-value::after {
+            content: ':';
+            position: absolute;
+            right: -12px;
+            color: var(--primary-red);
+            font-weight: 700;
+        }
+
+        .time-unit:last-child .time-value::after {
+            display: none;
+        }
+
+        .time-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-gray);
+            margin-top: 5px;
+        }
+
+        /* Texto de Ação CENTRALIZADO - Sem ícone */
+        .video-action-text {
+            text-align: center;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .action-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-white);
+            display: inline-block;
+            padding: 15px 40px;
+            background: rgba(217, 4, 41, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(217, 4, 41, 0.3);
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 0 0 50px;
+            position: relative;
+        }
+
+        .video-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.7);
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: var(--card-bg);
+        }
+
+        /* YouTube Container DIRETO */
+        .youtube-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+            cursor: pointer;
+        }
+
+        /* Iframe do YouTube - SEM BARRA DE PROGRESSO */
+        .youtube-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Overlay para BLOQUEAR interação com barra de progresso */
+        .progress-blocker {
+            position:
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 40px 0 80px;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: var(--gradient-button);
+            color: var(--text-white);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 25px rgba(217, 4, 41, 0.25);
+            letter-spacing: 0.5px;
+            border: none;
+            cursor: pointer;
+            max-width: 280px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(217, 4, 41, 0.35);
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .button-icon {
+            font-size: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover .button-icon {
+            transform: translateX(5px);
+        }
+
+        /* Footer Minimalista */
+        .footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-gray);
+            font-size: 13px;
+        }
+
+        .method-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            background: var(--gradient-red);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .fade-in-delay {
+            animation: fadeIn 0.8s ease-out 0.3s forwards;
+            opacity: 0;
+        }
+
+        .fade-in-delay-2 {
+            animation: fadeIn 0.8s ease-out 0.6s forwards;
+            opacity: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.6rem;
+            }
+            
+            .time-value {
+                font-size: 24px;
+            }
+            
+            .action-text {
+                font-size: 17px;
+                padding: 12px 30px;
+                max-width: 450px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 10px 0 30px;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 30px;
+            }
+            
+            .countdown-integrated {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+                margin-bottom: 30px;
+            }
+            
+            .time-value {
+                font-size: 22px;
+            }
+            
+            .action-text {
+                font-size: 16px;
+                padding: 10px 25px;
+                max-width: 400px;
+            }
+            
+            .cta-button {
+                padding: 14px 30px;
+                font-size: 14px;
+                max-width: 260px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.9rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .urgency-tag {
+                padding: 6px 15px;
+            }
+            
+            .urgency-text {
+                font-size: 11px;
+            }
+            
+            .time-value {
+                font-size: 20px;
+            }
+            
+            .time-unit {
+                min-width: 40px;
+            }
+            
+            .action-text {
+                font-size: 15px;
+                padding: 8px 20px;
+                max-width: 300px;
+            }
+            
+            .cta-button {
+                padding: 13px 25px;
+                font-size: 13px;
+                max-width: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header com Tag de Urgência -->
+    <header class="header">
+        <div class="container">
+            <div class="urgency-tag fade-in">
+                <div class="urgency-text">
+                    <i class="fas fa-clock"></i>
+                    CONTEÚDO TEMPORÁRIO • ASSISTA AGORA
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title fade-in">Seu problema não é esforço. É o cérebro.</h1>
+            <p class="hero-subtitle fade-in-delay">
+               Médicos e cientistas descobriram que um erro específico no cérebro pode desacelerar o metabolismo, mesmo em pessoas disciplinadas.
+               
+            
+            </p>
+            
+            <!-- Countdown Integrado -->
+            <div class="countdown-integrated fade-in-delay">
+                <div class="countdown-label">Este vídeo ficará disponível por:</div>
+                <div class="countdown-time">
+                    <div class="time-unit">
+                        <div class="time-value" id="hours">03</div>
+                        <div class="time-label">HORAS</div>
+                    </div>
+                    <div class="time-unit">
+                        <div class="time-value" id="minutes">32</div>
+                        <div class="time-label">MINUTOS</div>
+                    </div>
+                    <div class="time-unit">
+                        <div class="time-value" id="seconds">04</div>
+                        <div class="time-label">SEGUNDOS</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- TEXTO DE AÇÃO CENTRALIZADO - Sem ícone -->
+            <div class="video-action-text fade-in-delay">
+                <div class="action-text">
+                    CLIQUE NO VÍDEO ABAIXO PARA COMEÇAR
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section - SEM BARRA DE PROGRESSO -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-container fade-in-delay-2">
+                <div class="youtube-container" id="youtubeContainer">
+                    <!-- Overlay para BLOQUEAR barra de progresso -->
+                    <div class="progress-blocker"></div>
+                    
+                    <!-- Iframe do YouTube - SEM CONTROLES -->
+                    <iframe id="youtubeIframe" 
+                            class="youtube-iframe"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section fade-in-delay-2">
+        <div class="container">
+            <a href="https://go.tribopay.com.br/owf1gqa8td?fbclid=PAT01DUAPdf8lleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadZ7GUKypqgrY_99v3Gk6cOqZnOXpWl89oJ-OxylDYez4smizdzOUPvb8zByA_aem_oZQ14Xbsawtz4LRXRAVz9g" class="cta-button" id="checkout-button">
+                <span>QUERO ACESSAR O MÉTODO AGORA</span>
+                <i class="fas fa-arrow-right button-icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer com Nome do Método -->
+    <footer class="footer">
+        <div class="container">
+            <div class="method-name">MÉTODO RELÂMPAGO 21</div>
+            <p>© 2026 • Método científico de transformação corporal</p>
+            <p style="font-size: 11px; margin-top: 15px; opacity: 0.6;">
+                Resultados podem variar de acordo com cada indivíduo. Consulte sempre um profissional de saúde.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // ============================================
+        // CONFIGURAÇÃO DO VÍDEO - SUBSTITUA AQUI!
+        // ============================================
+        const YOUTUBE_VIDEO_ID = 'NVCAULZ5h7I'; // ⬅️ SUBSTITUA pelo ID do SEU vídeo!
+        
+        // ============================================
+        // CRONÔMETRO QUE DESCE FUNCIONAL!
+        // ============================================
+        function startCountdown() {
+            let totalSeconds = (3 * 60 * 60) + (32 * 60) + 4; // 03:32:04 como no print
+            
+            function updateTimer() {
+                const hours = Math.floor(totalSeconds / 3600);
+                const minutes = Math.floor((totalSeconds % 3600) / 60);
+                const seconds = totalSeconds % 60;
+                
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+                
+                if (totalSeconds <= 0) {
+                    totalSeconds = (3 * 60 * 60) + (32 * 60) + 4;
+                } else {
+                    totalSeconds--;
+                }
+            }
+            
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+        
+        // ============================================
+        // VÍDEO - SEM BARRA DE PROGRESSO
+        // ============================================
+        function setupVideo() {
+            const iframe = document.getElementById('youtubeIframe');
+            const container = document.getElementById('youtubeContainer');
+            
+            // URL do YouTube SEM controles, SEM barra de progresso
+            const youtubeUrl = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=0&mute=0&controls=0&rel=0&modestbranding=1&showinfo=0&playsinline=1&iv_load_policy=3&disablekb=1&fs=0&color=white`;
+            
+            iframe.src = youtubeUrl;
+            
+            // Quando clicar no vídeo
+            container.addEventListener('click', function() {
+                // Troca para URL com autoplay (ainda sem controles)
+                iframe.src = youtubeUrl.replace('autoplay=0', 'autoplay=1');
+                console.log('✅ Vídeo iniciado!');
+                console.log('✅ SEM barra de progresso!');
+                console.log('✅ NÃO pode passar pra frente!');
+            });
+            
+            // Fallback: inicia automaticamente após 60 segundos
+            setTimeout(() => {
+                if (iframe.src.includes('autoplay=0')) {
+                    iframe.src = youtubeUrl.replace('autoplay=0', 'autoplay=1');
+                    console.log('✅ Vídeo iniciado automaticamente!');
+                }
+            }, 60000);
+        }
+        
+        // ============================================
+        // INICIALIZA TUDO
+        // ============================================
+        window.addEventListener('load', function() {
+            console.log('Página carregada!');
+            
+            // 1. Inicia cronômetro
+            startCountdown();
+            
+            // 2. Configura vídeo
+            setupVideo();
+            
+            console.log('✅ Cronômetro descendo (03:32:04)!');
+            console.log('✅ Texto centralizado e limpo!');
+            console.log('✅ YouTube SEM barra de progresso!');
+            console.log('✅ NÃO pode passar pra frente!');
+            console.log('✅ 1 clique para começar!');
+        });
+             // Animações de entrada
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('fade-in')) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.video-container, .cta-section').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+     
