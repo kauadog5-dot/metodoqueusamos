@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transformação Corporal 2026 | Método Neurocientífico</title>
+    <title>Método Relâmpago 21 | Transformação Corporal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -48,158 +48,70 @@
             padding: 0 20px;
         }
 
-        /* Header Minimalista */
-        .header {
-            padding: 40px 0 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        /* Tag de Urgência Elegante */
-        .urgency-tag {
-            display: inline-block;
-            background: linear-gradient(135deg, rgba(217, 4, 41, 0.1), rgba(255, 77, 109, 0.1));
-            border: 1px solid rgba(217, 4, 41, 0.3);
-            border-radius: 50px;
-            padding: 8px 20px;
-            margin-bottom: 25px;
-            backdrop-filter: blur(10px);
-            animation: pulse 2s infinite;
-        }
-
-        .urgency-text {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: var(--light-red);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
         /* Hero Section */
         .hero {
-            padding: 20px 0 40px;
+            padding: 60px 0 20px;
             text-align: center;
             position: relative;
         }
 
         .hero-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-weight: 800;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, var(--text-white) 0%, var(--light-red) 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
             line-height: 1.1;
             letter-spacing: -0.5px;
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
+            background: linear-gradient(135deg, #FFFFFF 0%, #FF4D6D 30%, #D90429 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .hero-subtitle {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             color: var(--text-gray);
             max-width: 700px;
-            margin: 0 auto 40px;
+            margin: 0 auto 15px;
             font-weight: 400;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
-        /* Countdown Elegante e Integrado */
-        .countdown-integrated {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 40px;
-            padding: 20px;
-            background: rgba(20, 20, 20, 0.6);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+        /* Aviso de Som - MAIS PRÓXIMO DO VÍDEO */
+        .sound-notice {
+            text-align: center;
+            margin-bottom: 8px;
+            margin-top: 60px;
+            color: var(--text-gray);
+            font-size: 13px;
+            font-family: 'Orbitron', monospace;
+            font-weight: 400;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            opacity: 1;
+            padding: 0;
+            transition: opacity 1s ease-out;
         }
 
-        .countdown-label {
-            font-family: 'Montserrat', sans-serif;
+        .sound-notice.hidden {
+            opacity: 0;
+            height: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .sound-notice i {
+            color: var(--light-red);
+            margin-right: 8px;
             font-size: 14px;
-            font-weight: 600;
-            color: var(--text-gray);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            vertical-align: middle;
         }
 
-        .countdown-time {
-            display: flex;
-            gap: 5px;
-        }
-
-        .time-unit {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 50px;
-        }
-
-        .time-value {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--primary-red);
-            line-height: 1;
-            position: relative;
-        }
-
-        .time-value::after {
-            content: ':';
-            position: absolute;
-            right: -12px;
-            color: var(--primary-red);
-            font-weight: 700;
-        }
-
-        .time-unit:last-child .time-value::after {
-            display: none;
-        }
-
-        .time-label {
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-gray);
-            margin-top: 5px;
-        }
-
-        /* Texto de Ação CENTRALIZADO - Sem ícone */
-        .video-action-text {
-            text-align: center;
-            margin-bottom: 40px;
-            width: 100%;
-        }
-
-        .action-text {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--text-white);
-            display: inline-block;
-            padding: 15px 40px;
-            background: rgba(217, 4, 41, 0.15);
-            border-radius: 10px;
-            border: 1px solid rgba(217, 4, 41, 0.3);
-            text-align: center;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        /* Video Section */
+        /* Video Section - Wistia */
         .video-section {
             padding: 0 0 50px;
             position: relative;
@@ -210,49 +122,39 @@
             margin: 0 auto;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
             position: relative;
             border: 1px solid rgba(255, 255, 255, 0.08);
             background: var(--card-bg);
         }
 
-        /* YouTube Container DIRETO */
-        .youtube-container {
+        /* Container do Wistia */
+        .wistia-container {
             position: relative;
             width: 100%;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
             background: #000;
-            cursor: pointer;
         }
 
-        /* Iframe do YouTube - SEM BARRA DE PROGRESSO */
-        .youtube-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* Overlay para BLOQUEAR interação com barra de progresso */
-        .progress-blocker {
-            position:
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 50px;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 10;
-            pointer-events: none;
-        }
-
-        /* CTA Section */
+        /* CTA Section - INICIALMENTE ESCONDIDO */
         .cta-section {
             padding: 40px 0 80px;
             text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .cta-section.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            height: auto;
         }
 
         .cta-button {
@@ -263,9 +165,9 @@
             background: var(--gradient-button);
             color: var(--text-white);
             font-family: 'Montserrat', sans-serif;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 600;
-            padding: 15px 35px;
+            padding: 18px 40px;
             border-radius: 50px;
             text-decoration: none;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -273,7 +175,7 @@
             letter-spacing: 0.5px;
             border: none;
             cursor: pointer;
-            max-width: 280px;
+            max-width: 320px;
             margin: 0 auto;
             position: relative;
             overflow: hidden;
@@ -308,13 +210,15 @@
             transform: translateX(5px);
         }
 
-        /* Footer Minimalista */
+        /* Footer Minimalista - MENOS OPACIDADE */
         .footer {
             padding: 40px 0;
             text-align: center;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             color: var(--text-gray);
             font-size: 13px;
+            font-family: 'Inter', sans-serif;
+            opacity: 0.7;
         }
 
         .method-name {
@@ -341,12 +245,17 @@
             }
         }
 
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
+        @keyframes pulseButton {
+            0% {
+                box-shadow: 0 0 0 0 rgba(217, 4, 41, 0.7);
+                transform: scale(1);
             }
             50% {
-                opacity: 0.7;
+                transform: scale(1.05);
+            }
+            100% {
+                box-shadow: 0 0 0 15px rgba(217, 4, 41, 0);
+                transform: scale(1);
             }
         }
 
@@ -367,23 +276,22 @@
         /* Responsive */
         @media (max-width: 992px) {
             .hero-title {
-                font-size: 2.6rem;
+                font-size: 2.5rem;
             }
             
-            .time-value {
-                font-size: 24px;
+            .hero-subtitle {
+                font-size: 1.2rem;
             }
             
-            .action-text {
-                font-size: 17px;
-                padding: 12px 30px;
-                max-width: 450px;
+            .sound-notice {
+                font-size: 12px;
+                letter-spacing: 1px;
             }
         }
 
         @media (max-width: 768px) {
             .hero {
-                padding: 10px 0 30px;
+                padding: 40px 0 15px;
             }
             
             .hero-title {
@@ -392,30 +300,19 @@
             
             .hero-subtitle {
                 font-size: 1.1rem;
-                margin-bottom: 30px;
+                margin-bottom: 12px;
             }
             
-            .countdown-integrated {
-                flex-direction: column;
-                gap: 15px;
-                padding: 15px;
-                margin-bottom: 30px;
-            }
-            
-            .time-value {
-                font-size: 22px;
-            }
-            
-            .action-text {
-                font-size: 16px;
-                padding: 10px 25px;
-                max-width: 400px;
+            .sound-notice {
+                font-size: 11px;
+                letter-spacing: 0.8px;
+                margin-bottom: 25px;
             }
             
             .cta-button {
-                padding: 14px 30px;
-                font-size: 14px;
-                max-width: 260px;
+                padding: 16px 35px;
+                font-size: 15px;
+                max-width: 300px;
             }
         }
 
@@ -426,120 +323,66 @@
             
             .hero-subtitle {
                 font-size: 1rem;
+                margin-bottom: 10px;
             }
             
-            .urgency-tag {
-                padding: 6px 15px;
-            }
-            
-            .urgency-text {
-                font-size: 11px;
-            }
-            
-            .time-value {
-                font-size: 20px;
-            }
-            
-            .time-unit {
-                min-width: 40px;
-            }
-            
-            .action-text {
-                font-size: 15px;
-                padding: 8px 20px;
-                max-width: 300px;
+            .sound-notice {
+                font-size: 10px;
+                letter-spacing: 0.6px;
+                margin-bottom: 20px;
             }
             
             .cta-button {
-                padding: 13px 25px;
-                font-size: 13px;
-                max-width: 240px;
+                padding: 15px 30px;
+                font-size: 14px;
+                max-width: 280px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header com Tag de Urgência -->
-    <header class="header">
-        <div class="container">
-            <div class="urgency-tag fade-in">
-                <div class="urgency-text">
-                    <i class="fas fa-clock"></i>
-                    CONTEÚDO TEMPORÁRIO • ASSISTA AGORA
-                </div>
-            </div>
-        </div>
-    </header>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title fade-in">Seu problema não é esforço. É o cérebro.</h1>
+            <h1 class="hero-title fade-in">ASSISTA ATÉ O FINAL E ENTENDA O MÉTODO QUE USAMOS</h1>
             <p class="hero-subtitle fade-in-delay">
-               Médicos e cientistas descobriram que um erro específico no cérebro pode desacelerar o metabolismo, mesmo em pessoas disciplinadas.
-               
-            
+                Sem dietas malucas, sem passar fome e sem rotina impossível.
             </p>
             
-            <!-- Countdown Integrado -->
-            <div class="countdown-integrated fade-in-delay">
-                <div class="countdown-label">Este vídeo ficará disponível por:</div>
-                <div class="countdown-time">
-                    <div class="time-unit">
-                        <div class="time-value" id="hours">03</div>
-                        <div class="time-label">HORAS</div>
-                    </div>
-                    <div class="time-unit">
-                        <div class="time-value" id="minutes">32</div>
-                        <div class="time-label">MINUTOS</div>
-                    </div>
-                    <div class="time-unit">
-                        <div class="time-value" id="seconds">04</div>
-                        <div class="time-label">SEGUNDOS</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- TEXTO DE AÇÃO CENTRALIZADO - Sem ícone -->
-            <div class="video-action-text fade-in-delay">
-                <div class="action-text">
-                    CLIQUE NO VÍDEO ABAIXO PARA COMEÇAR
-                </div>
+            <!-- Aviso de Som - MAIS PRÓXIMO DO VÍDEO -->
+            <div class="sound-notice fade-in-delay" id="soundNotice">
+                <i class="fas fa-volume-up"></i>
+                CLIQUE NO VÍDEO E ATIVE O SOM AGORA
             </div>
         </div>
     </section>
 
-    <!-- Video Section - SEM BARRA DE PROGRESSO -->
+    <!-- Video Section - Wistia -->
     <section class="video-section">
         <div class="container">
             <div class="video-container fade-in-delay-2">
-                <div class="youtube-container" id="youtubeContainer">
-                    <!-- Overlay para BLOQUEAR barra de progresso -->
-                    <div class="progress-blocker"></div>
-                    
-                    <!-- Iframe do YouTube - SEM CONTROLES -->
-                    <iframe id="youtubeIframe" 
-                            class="youtube-iframe"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                    </iframe>
+                <div class="wistia-container">
+                    <!-- Player Wistia com código fornecido -->
+                    <script src="https://fast.wistia.com/player.js" async></script>
+                    <script src="https://fast.wistia.com/embed/0au11ekw1l.js" async type="module"></script>
+                    <style>wistia-player[media-id='0au11ekw1l']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/0au11ekw1l/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> 
+                    <wistia-player media-id="0au11ekw1l" aspect="1.7777777777777777"></wistia-player>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section fade-in-delay-2">
+    <!-- CTA Section - INICIALMENTE ESCONDIDO -->
+    <section class="cta-section" id="ctaSection">
         <div class="container">
             <a href="https://go.tribopay.com.br/owf1gqa8td?fbclid=PAT01DUAPdf8lleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadZ7GUKypqgrY_99v3Gk6cOqZnOXpWl89oJ-OxylDYez4smizdzOUPvb8zByA_aem_oZQ14Xbsawtz4LRXRAVz9g" class="cta-button" id="checkout-button">
-                <span>QUERO ACESSAR O MÉTODO AGORA</span>
+                <span>QUERO CONHECER O MÉTODO</span>
                 <i class="fas fa-arrow-right button-icon"></i>
             </a>
         </div>
     </section>
 
-    <!-- Footer com Nome do Método -->
+    <!-- Footer com Nome do Método - MENOS OPACIDADE -->
     <footer class="footer">
         <div class="container">
             <div class="method-name">MÉTODO RELÂMPAGO 21</div>
@@ -552,97 +395,161 @@
 
     <script>
         // ============================================
-        // CONFIGURAÇÃO DO VÍDEO - SUBSTITUA AQUI!
+        // SISTEMA PARA MOSTRAR O BOTÃO NO TEMPO CERTO
         // ============================================
-        const YOUTUBE_VIDEO_ID = 'NVCAULZ5h7I'; // ⬅️ SUBSTITUA pelo ID do SEU vídeo!
-        
-        // ============================================
-        // CRONÔMETRO QUE DESCE FUNCIONAL!
-        // ============================================
-        function startCountdown() {
-            let totalSeconds = (3 * 60 * 60) + (32 * 60) + 4; // 03:32:04 como no print
+        function setupButtonTimer() {
+            // Tempo para mostrar o botão: 23 minutos e 42 segundos
+            const showButtonTime = (23 * 60) + 42; // 1422 segundos
+            let videoStarted = false;
+            let showButtonTimeout = null;
+            let buttonShown = false;
             
-            function updateTimer() {
-                const hours = Math.floor(totalSeconds / 3600);
-                const minutes = Math.floor((totalSeconds % 3600) / 60);
-                const seconds = totalSeconds % 60;
+            console.log(`⏱️ Configurado: Botão aparecerá em: ${showButtonTime} segundos (23:42)`);
+            
+            // Obtém a seção CTA e esconde completamente
+            const ctaSection = document.getElementById('ctaSection');
+            if (ctaSection) {
+                ctaSection.style.display = 'none';
+            }
+            
+            // Função para mostrar o botão
+            function showCTAButton() {
+                if (buttonShown) return;
                 
-                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+                buttonShown = true;
                 
-                if (totalSeconds <= 0) {
-                    totalSeconds = (3 * 60 * 60) + (32 * 60) + 4;
-                } else {
-                    totalSeconds--;
+                if (ctaSection) {
+                    // Mostra a seção
+                    ctaSection.style.display = 'block';
+                    
+                    // Aguarda um frame para a transição CSS funcionar
+                    setTimeout(() => {
+                        ctaSection.classList.add('visible');
+                        
+                        // Adiciona animação de pulso ao botão
+                        const ctaButton = document.getElementById('checkout-button');
+                        if (ctaButton) {
+                            ctaButton.style.animation = 'pulseButton 2s infinite';
+                        }
+                        
+                        console.log('✅ BOTÃO APARECEU! (23:42 de vídeo)');
+                        
+                        // Rola suavemente até o botão
+                        setTimeout(() => {
+                            ctaSection.scrollIntoView({ 
+                                behavior: 'smooth',
+                                block: 'center'
+                            });
+                        }, 800);
+                    }, 50);
                 }
             }
             
-            updateTimer();
-            setInterval(updateTimer, 1000);
-        }
-        
-        // ============================================
-        // VÍDEO - SEM BARRA DE PROGRESSO
-        // ============================================
-        function setupVideo() {
-            const iframe = document.getElementById('youtubeIframe');
-            const container = document.getElementById('youtubeContainer');
+            // Sistema de detecção de reprodução do Wistia
+            function setupWistiaListeners() {
+                // Tenta detectar o player do Wistia
+                const checkForPlayer = setInterval(() => {
+                    const wistiaIframe = document.querySelector('iframe[src*="wistia"]');
+                    
+                    if (wistiaIframe && !videoStarted) {
+                        console.log('🎬 Player Wistia detectado! Configurando listeners...');
+                        
+                        // Fallback: Se não detectar início em 10 segundos, assume que começou
+                        setTimeout(() => {
+                            if (!videoStarted) {
+                                videoStarted = true;
+                                console.log('🎬 Vídeo considerado iniciado');
+                                startButtonCountdown();
+                                
+                                // Esconde o aviso de som após 1 minuto
+                                setTimeout(() => {
+                                    const soundNotice = document.getElementById('soundNotice');
+                                    if (soundNotice) {
+                                        soundNotice.classList.add('hidden');
+                                        console.log('🔇 Aviso de som escondido após 1 minuto');
+                                    }
+                                }, 60000); // 1 minuto = 60000 milissegundos
+                            }
+                        }, 10000);
+                        
+                        clearInterval(checkForPlayer);
+                    }
+                }, 1000);
+                
+                // Timeout para garantir que algo aconteça
+                setTimeout(() => {
+                    if (!videoStarted) {
+                        videoStarted = true;
+                        console.log('🎬 Timeout: Considerando vídeo iniciado');
+                        startButtonCountdown();
+                        
+                        // Esconde o aviso de som após 1 minuto mesmo sem vídeo iniciado
+                        setTimeout(() => {
+                            const soundNotice = document.getElementById('soundNotice');
+                            if (soundNotice) {
+                                soundNotice.classList.add('hidden');
+                                console.log('🔇 Aviso de som escondido após 1 minuto (timeout)');
+                            }
+                        }, 60000);
+                    }
+                }, 15000);
+                
+                // Esconde o aviso após 1 minuto independente de tudo
+                setTimeout(() => {
+                    const soundNotice = document.getElementById('soundNotice');
+                    if (soundNotice && !soundNotice.classList.contains('hidden')) {
+                        soundNotice.classList.add('hidden');
+                        console.log('🔇 Aviso de som escondido após 1 minuto (fallback)');
+                    }
+                }, 90000); // Fallback de 1.5 minutos
+            }
             
-            // URL do YouTube SEM controles, SEM barra de progresso
-            const youtubeUrl = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=0&mute=0&controls=0&rel=0&modestbranding=1&showinfo=0&playsinline=1&iv_load_policy=3&disablekb=1&fs=0&color=white`;
+            function startButtonCountdown() {
+                console.log(`⏳ Contagem iniciada! Mostrando botão em ${showButtonTime} segundos...`);
+                
+                // Configura o timeout para mostrar o botão
+                showButtonTimeout = setTimeout(() => {
+                    showCTAButton();
+                }, showButtonTime * 1000);
+            }
             
-            iframe.src = youtubeUrl;
+            // Inicia o sistema de detecção
+            setupWistiaListeners();
             
-            // Quando clicar no vídeo
-            container.addEventListener('click', function() {
-                // Troca para URL com autoplay (ainda sem controles)
-                iframe.src = youtubeUrl.replace('autoplay=0', 'autoplay=1');
-                console.log('✅ Vídeo iniciado!');
-                console.log('✅ SEM barra de progresso!');
-                console.log('✅ NÃO pode passar pra frente!');
-            });
-            
-            // Fallback: inicia automaticamente após 60 segundos
+            // Fallback final
             setTimeout(() => {
-                if (iframe.src.includes('autoplay=0')) {
-                    iframe.src = youtubeUrl.replace('autoplay=0', 'autoplay=1');
-                    console.log('✅ Vídeo iniciado automaticamente!');
+                if (!buttonShown) {
+                    console.log('⚠️ Fallback final: Mostrando botão após 30 minutos');
+                    showCTAButton();
                 }
-            }, 60000);
+            }, 30 * 60 * 1000);
         }
         
         // ============================================
         // INICIALIZA TUDO
         // ============================================
         window.addEventListener('load', function() {
-            console.log('Página carregada!');
+            console.log('🚀 Página carregada!');
+            console.log('🎯 Botão será mostrado após 23:42 de vídeo');
+            console.log('👀 Botão está INVISÍVEL no início');
+            console.log('🔇 Aviso de som será escondido após 1 minuto');
             
-            // 1. Inicia cronômetro
-            startCountdown();
+            // Configura timer para mostrar o botão
+            setupButtonTimer();
             
-            // 2. Configura vídeo
-            setupVideo();
+            // Animações de entrada
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.classList.contains('fade-in')) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
             
-            console.log('✅ Cronômetro descendo (03:32:04)!');
-            console.log('✅ Texto centralizado e limpo!');
-            console.log('✅ YouTube SEM barra de progresso!');
-            console.log('✅ NÃO pode passar pra frente!');
-            console.log('✅ 1 clique para começar!');
-        });
-             // Animações de entrada
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !entry.target.classList.contains('fade-in')) {
-                    entry.target.classList.add('fade-in');
-                }
+            document.querySelectorAll('.video-container').forEach(el => {
+                observer.observe(el);
             });
-        }, { threshold: 0.1 });
-        
-        document.querySelectorAll('.video-container, .cta-section').forEach(el => {
-            observer.observe(el);
         });
     </script>
 </body>
 </html>
-     
